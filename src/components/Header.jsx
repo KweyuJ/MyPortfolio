@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { 
   UilEstate, 
   UilUser, 
@@ -8,17 +9,25 @@ import {
   UilTimes, 
   UilApps 
 } from '@iconscout/react-unicons';
-import './header.css'
-
-
-
+import './header.css';
 
 const Header = () => {
+  // Toggle menu state
+  const [Toggle, showMenu] = useState(false);
+
   return (
     <header className='header'>
       <nav className='nav container'>
         <a href="index.html" className='nav_logo'>Kweyu</a>
-        <div className='nav_menu'>
+
+        {/* Show toggle button when menu is hidden */}
+        {!Toggle && (
+          <div className='nav_toggle' onClick={() => showMenu(!Toggle)}>
+            <UilApps />
+          </div>
+        )}
+
+        <div className={Toggle ? 'nav_menu show-menu' : 'nav_menu'}>
           <ul className='nav_list'>
             <li className='nav_item'>
               <a href="#home" className='nav_link'>
@@ -51,14 +60,15 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <UilTimes className='nav_close' />
-          <div className='nav_toggle'>
-            <UilApps />
-          </div>
+
+          {/* Show close button when menu is open */}
+          {Toggle && (
+            <UilTimes className='nav_close' onClick={() => showMenu(false)} />
+          )}
         </div>
       </nav>
     </header>
-  )
+  );
 }
 
 export default Header;
