@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,100&display=swap");
+@import url('https://unpkg.com/boxicons/css/boxicons.min.css');
+
 
 :root {
   --header-height: 3rem;
@@ -188,9 +190,11 @@ img{
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
   }
+
 }
 /* For medium devices */
 @media screen and (max-width: 768px) {
+
 }
 
 @media screen and (max-width: 576px) {
@@ -202,3 +206,6 @@ img{
     margin-right: var(--mb-1);
   }
 }
+
+
+
