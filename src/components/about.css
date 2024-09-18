@@ -44,6 +44,13 @@
     margin-bottom: var(--mb-2-5);
 }
 
+.section__title, .section__subtitle {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+}
+
+
 /*=============== BREAKPOINTS ===============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
