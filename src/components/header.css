@@ -137,3 +137,26 @@
         column-gap: 0;
     }
 }
+
+
+/* Default light mode styles */
+body {
+    --bg-color: #fff;
+    --text-color: #000;
+    --container-color: #f0f0f0;
+  }
+  
+  /* Dark mode styles */
+  body.dark-theme {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --container-color: #1e1e1e;
+  }
+  
+  .header, .nav_menu, .testimonial__card {
+    background-color: var(--container-color);
+    color: var(--text-color);
+  }
+  
+  /* Other elements can also use the variables for dark/light themes */
+  

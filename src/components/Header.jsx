@@ -7,11 +7,13 @@ import {
   UilScenery, 
   UilMessage, 
   UilTimes, 
-  UilApps 
+  UilApps,
+  UilMoon,  // Icon for dark mode
+  UilSun    // Icon for light mode
 } from '@iconscout/react-unicons';
 import './header.css';
 
-const Header = () => {
+const Header = ({ toggleDarkMode, darkMode }) => {
   // Toggle menu state
   const [Toggle, showMenu] = useState(false);
 
@@ -19,6 +21,11 @@ const Header = () => {
     <header className='header'>
       <nav className='nav container'>
         <a href="index.html" className='nav_logo'>Kweyu</a>
+
+        {/* Dark/Light mode toggle */}
+        <div className='nav_mode' onClick={toggleDarkMode}>
+          {darkMode ? <UilSun /> : <UilMoon />}
+        </div>
 
         {/* Show toggle button when menu is hidden */}
         {!Toggle && (
