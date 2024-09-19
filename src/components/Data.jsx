@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function Data() {
   return (
     <div className="home__data">
@@ -55,7 +56,7 @@ function Data() {
           ></path>
         </svg>
       </h1>
-      <h3 className="home__subtitle">_____Fullstack developer</h3>
+      <h3 className="home__subtitle">Fullstack developer</h3>
       <p className="home__description">
         I'm a creative developer based in Nairobi, I am very passionate and
         dedicated to my work.
