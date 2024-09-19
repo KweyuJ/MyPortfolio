@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function Backend() {
   return (
@@ -7,21 +7,14 @@ function Backend() {
 
       <div className="skills__box">
         <div className="skills__group">
-          <div className="skills__data">
-            <i class="bx bx-badge-check"></i>
-
-            <div>
-              <h3 className="skills__name">PHP</h3>
-              <span className="skills__level">Intermediate</span>
-            </div>
-          </div>
+          <div className="skills__data"></div>
 
           <div className="skills__data">
             <i class="bx bx-badge-check"></i>
 
             <div>
               <h3 className="skills__name">Node Js</h3>
-              <span className="skills__level">Basic</span>
+              <span className="skills__level">Advanced</span>
             </div>
           </div>
 
@@ -40,8 +33,8 @@ function Backend() {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skills__name">MySQL</h3>
-              <span className="skills__level">Intermediate</span>
+              <h3 className="skills__name">PostgreSQL</h3>
+              <span className="skills__level">Advanced</span>
             </div>
           </div>
 
@@ -49,8 +42,8 @@ function Backend() {
             <i class="bx bx-badge-check"></i>
 
             <div>
-              <h3 className="skills__name">Firebase</h3>
-              <span className="skills__level">Intermediate</span>
+              <h3 className="skills__name">Flask</h3>
+              <span className="skills__level">Advanced</span>
             </div>
           </div>
 
@@ -65,7 +58,7 @@ function Backend() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Backend
+export default Backend;
