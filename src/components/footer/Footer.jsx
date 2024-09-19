@@ -29,32 +29,35 @@ const Footer = () => {
 
         <div className="footer__social">
           <a
-            href="https://www.facebook.com/"
+            href="https://www.instagram.com/_ayie.ko_"
             className="footer__social-link"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <i className="bx bxl-facebook"></i>
+            <i className="bx bxl-instagram"></i>
           </a>
 
           <a
-            href="https://www.instagram.com/"
+            href="https://www.linkedin.com/in/joy-kweyu-7ba5b9247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             className="footer__social-link"
             target="_blank"
+            rel="noopener noreferrer"
           >
-            <i className="bx bxl-instagram"></i>
+            <i className="bx bxl-linkedin"></i>
           </a>
 
           <a
             href="https://twitter.com/"
             className="footer__social-link"
             target="_blank"
+            rel="noopener noreferrer"
           >
             <i className="bx bxl-twitter"></i>
           </a>
         </div>
 
         <span className="footer__copy">
-          &#169; JoyKweyu. All rigths reserved
+          &#169; JoyKweyu. All rights reserved
         </span>
       </div>
     </footer>

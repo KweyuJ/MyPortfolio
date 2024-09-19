@@ -47,9 +47,6 @@ export const projectsNav = [
     name:'web',
   },
   {
-    name:'web',
-  },
-  {
     name:'design',
   },
 ];
